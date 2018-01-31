@@ -32,7 +32,11 @@ Web Programming
 ### How to
 
  > git clone https://github.com/WebJalAl/Edu-PPT
+
  > cd Edu-PPT
+
  > goto what you want see file
+
  > double click
+
  > done
