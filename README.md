@@ -31,12 +31,14 @@ Web Programming
 
 ### How to
 
- > git clone https://github.com/WebJalAl/Edu-PPT
+```bash
+ $ git clone https://github.com/WebJalAl/Edu-PPT
 
- > cd Edu-PPT
+ $ cd Edu-PPT
 
- > goto what you want see file
+ #goto what you want see file
 
- > double click
+ #double click
 
- > done
+ #done
+```
