@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>안녕, HTML?</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage();
+            });
+        </script>
+        <script type='text/javascript'>
+            WebFontConfig = {
+                custom: {
+                    families: ['Nanum Square'],
+                    urls: ['https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css']
+                }
+            };
+            (() => {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./jquery.fullPage.css"/>
+        <link rel="stylesheet" type="text/css" href="./ppt5.css"/>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>설리번과 함께라면 나도 웹잘알!</h1>
+                    <h2>자바스크립트??</h2>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>목차</h1>
+                    <h2><a href="#firstPage">1. 알림을 나타내는 함수</a></h2>
+                    <h2><a href="#secondPage">2. 함수의 심화</a></h2>
+                    <h2><a href="#thirdPage">3. DOM</a></h2>
+                    <h2><a href="#fourthPage">4. node.js</a></h2>
+                </div>
+            </div>
+            <div class="section section2" id="firstPage">
+                <div class="middleBigTitle">
+                    <h1>1. 알림을 나타내는 함수</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>alert()</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf1.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>prompt()</h1>
+                    <h2>인자 두개!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf2.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf3.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>confirm()</h1>
+                    <h2>인자 세개!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf4.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf5.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf6.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>alert()</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                  <div class="imgContainer">
+                    <img src="http://kbadmin.globalsoft.co.kr//editor/upload/21614_0851_alertf1.png" />
+                  </div>
+                </div>
+            </div>
+            <div class="section section3" id="secondPage">
+                <div class="middleBigTitle">
+                    <h1>2. 함수의 심화</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>return;</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>return : 반환하다</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>함수가 값을 반환한다!</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>function a() { return 3 }</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>console.log(a())</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>function sum(x, y) { return x + y }</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>console.log("1과 2의 합은" + sum(1,2) + "입니다")</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>익명함수 (람다식)!</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>익명함수란?</h1>
+                    <h2>이름이 없는 함수!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>예를 들어?</h1>
+                    <h2>function(a) { console.log(a) }</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>조금 더 간단하게!</h1>
+                    <h2>(a) => { console.log(a) }</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>더 간단하게!</h1>
+                    <h2>a => console.log(a)</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>1급 객체??</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>1. 변수에 담을 수 있다!</h1>
+                    <h2>a = (b) => { return b; }</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>2. 반환값으로 넘길 수 있다</h1>
+                    <h2>return {(b) => { return b; }}</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>3. 인자로 넘길 수 있다</h1>
+                    <h2>function say(write, b) {write(b)}</h2>
+                    <h2>say(console.log, "wow")</h2>
+                </div>
+            </div>
+            <div class="section section4" id="thirdPage">
+                <div class="middleBigTitle">
+                    <h1>3. DOM</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>Document Object Model</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>문서객체모델</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./domtree.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h2>document.getElementById("haha").innerHTML</h2>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h2>document.getElementById("haha").onclick = <br>
+                         () => {console.log("haha")}</h2>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>html생성!</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <code>
+                        <h2>&#60;!DOCTYPE html&#62;</h2><br><br>
+                        <h2>&#60;html&#62;</h2><br><br>
+                        <h2>&nbsp;&nbsp;&#60;head&#62;</h2><br><br>
+                        <h2>&nbsp;&nbsp;&#60;/head&#62;</h2><br><br>
+                        <h2>&nbsp;&nbsp;&#60;body&#62;</h2><br><br>
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&#60;button id="wow"&#62;</h2><br><br>
+                        <h2>&nbsp;&nbsp;&#60;/body&#62;</h2><br><br>
+                        <h2>&#60;/html&#62;</h2>
+                    </code>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h2>document.getElementById("wow").onclick = <br>
+                         () => { alert("wow") }</h2>
+                </div>
+            </div>
+            <div class="section section5" id="fourthPage">
+                <div class="middleBigTitle">
+                    <h1>4. node.js</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>node JS란?</h1>
+                    <h1>JS기반의 서버사이드 플랫폼!</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>NODE JS의 특징</h1>
+                    <h2>1. 비동기식 / 이벤트 처리 위주</h2>
+                    <h2>2. 빠른 속도</h2>
+                    <h2>3. 단일 쓰레드 / 뛰어난 확장성</h2>
+                    <h2>4. 노  버퍼링</h2>
+                    <h2>5. MIT 라이센스</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>NODE JS를 사용하는 곳</h1>
+                    <h2> eBay, GoDaddy, Microsoft, Paypal, Yahoo! 등 많은곳</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>NODE JS 설치!</h1>
+                    <h2>https://nodejs.org/en/download/</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>파일 실행해보기!</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>main.js 파일 생성 후</h1>
+                    <h1>console.log("Hello, World!")</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>콘솔 창에서</h1>
+                    <h1>node main.js</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>노드 맛보기!!</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>REPL 이란?</h1>
+                    <h2>Node.js의 REPL 환경은 자바스크립트 코드를 테스팅 및 디버깅할때 유용하게 사용</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h2>콘솔 창에</h2>
+                    <h1>node</h1>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h2>끝!</h2>
+                    <h1>감사합니다!</h1>
+                    <h2>박평진, 안다해</h2>
+                    <h3>설리번 프로젝트</h3>
+                </div>
+            </div>
+
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.</h1>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.2</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
