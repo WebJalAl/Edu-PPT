@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>안녕, HTML?</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage();
+            });
+        </script>
+        <script type='text/javascript'>
+            WebFontConfig = {
+                custom: {
+                    families: ['Nanum Square'],
+                    urls: ['https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css']
+                }
+            };
+            (() => {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./jquery.fullPage.css"/>
+        <link rel="stylesheet" type="text/css" href="./ppt6.css"/>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>설리번과 함께라면 나도 웹잘알!</h1>
+                    <h2>6차시 HTTP 통신!!</h2>
+                </div>
+            </div>
+            <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>목차</h1>
+                    <h2><a href="#firstPage">1. 통신</a></h2>
+                    <h2><a href="#secondPage">2. HTTP</a><a href="#secondOnePage"> |1| </a><a href="#secondTwoPage"> |2| </a><a href="#secondThreePage"> |3| </a></h2>
+                    <h2><a href="#thirdPage">3. node.js</a></h2>
+                    <h2><a href="#fourthPage">4. npm</a></h2>
+                    <h2><a href="#fifthPage">5. express.js</a></h2>
+                    <h2><a href="#sixthPage">6. 서버를 만들어보기</a></h2>
+                </div>
+            </div>
+            <div class="section section1" id="firstPage">
+                <div class="middleBigTitle">
+                    <h1>1. 통신</h1>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>통신?</h1>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="https://udemy-images.udemy.com/course/750x422/281138_ccf8_11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="http://it.donga.com/files/2012/01/06/04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>소통!</h1>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="http://cfile25.uf.tistory.com/image/221DAC38570A571014C422" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>언어규약들..</h1>
+                    <h2>언어, 시간, 장소, 사투리, 비언어적 표현..</h2>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>통신규약!</h1>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1>프로토콜</h1>
+                    <h2>Protocol</h2>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h2>주고 받는 메세지의 양식과 규칙의 체계</h2>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/protocolInside.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/protocolTcp.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/protocolUdp.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section2" id="secondPage">
+                <div class="middleBigTitle">
+                    <h1>2. HTTP</h1>
+                </div>
+            </div>
+            <div class="section section2" id="secondOnePage">
+                <div class="middleBigTitle">
+                    <h1>2-1. HTTP란?</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>HyperText Transfer Protocol</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>HyperText Transfer Protocol</h1>
+                    <h2>HTML과 연관이 있어 보인다!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>HyperText Transfer Protocol</h1>
+                    <h1>HyperText Markup Language</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>HyperText란?</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>위키백과에서..</h1>
+                    <h2>한 문서에서 다른 문서로 즉시 접근할 수 있는 텍스트이다.</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/bookSequential.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/htmlUnsequential.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>HyperText Transfer Protocol</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>하이퍼텍스트 전송 프로토콜</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>요청 &#45;&#62; 응답</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>http&#58;&#47;&#47;www&#46;naver&#46;com</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>주소: URL</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>주고받는 것</h1>
+                    <h2>웹페이지, 그림 정보, 데이터 등등..</h2>
+                </div>
+            </div>
+            <div class="section section2" id="secondTwoPage">
+                <div class="middleBigTitle">
+                    <h1>2-2. method</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>방법!</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>GET, POST, PUT, DELETE, PATCH...</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <div class="imgContainer">
+                        <img src="./img/methodTable.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>무엇을 하겠다!</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>GET</h1>
+                    <h2>내용 요청!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>웹페이지</h1>
+                    <h2>일반적으로</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>NAVER에 접속!</h1>
+                    <code>
+                        <h2>GET&#160;&#160;&#160;&#47;&#160;&#160;&#160;HTTP&#47;1&#46;1</h2>
+                        <h2>Host&#58; www&#46;naver&#46;com</h2>
+                    </code>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>결과</h1>
+                    <code>
+                        <h3>HTTP&#47;1&#46;1&#160;&#160;200&#160;&#160;OK</h3>
+                        <h3>Date:&#160;Mon,&#160;29&#160;January&#160;2018&#160;20:43:34&#160;GMT</h3>
+                        <h3>Content-Type:&#160;text/html;&#160;charset=UTF-8</h3>
+                        <h3>...</h3>
+                        <h3><br><br><pre>&#60;html&#62;
+&#60;head&#62;
+    &#60;title&#62;An Example Page&#60;&#47;title&#62;
+&#60;&#47;head&#62;
+&#60;body&#62;
+    Hello World, this is a very simple HTML document.
+&#60;&#47;body&#62;
+&#60;&#47;html&#62;</pre></h3>
+                    </code>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>POST</h1>
+                    <h2>내용 추가!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>예시</h1>
+                    <code>
+                        <h2>POST&#160;&#160;&#160;&#47;&#160;&#160;&#160;HTTP&#47;1&#46;1</h2>
+                        <h2>Host&#58; www&#46;naver&#46;com</h2>
+                        <h2>Content-Type&#58; application&#47;x-www-form-urlencoded</h2>
+                        <h2>Content-Length&#58; 13</h2>
+                        <br><br>
+                        <h2>say=Hi&to=Mom</h2>
+                    </code>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>PUT</h1>
+                    <h2>내용 업데이트(전부)!</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>PATCH</h1>
+                    <h2>내용 업데이트(부분)</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>DELETE</h1>
+                    <h2>내용 삭제!</h2>
+                </div>
+            </div>
+            <div class="section section2" id="secondThreePage">
+                <div class="middleBigTitle">
+                    <h1>2-3. 상태 코드</h1>
+                    <h2>Status Code</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>404  | Not Found | 문서가 없음</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>200  | OK | 오케이!</h1>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h2>1XX</h2>
+                    <h2>2XX</h2>
+                    <h2>3XX</h2>
+                    <h2>4XX</h2>
+                    <h2>5XX</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>1XX</h1>
+                    <h2>조건부 응답</h2>
+                    <h2>요청을 받았으며 작업을 계속한다.</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>2XX</h1>
+                    <h2>성공</h2>
+                    <h2>성공적으로 처리했음</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>3XX</h1>
+                    <h2>리다이렉션</h2>
+                    <h2>사용자는 추가동작을 취해야 한다.</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>4XX</h1>
+                    <h2>클라이언트(사용자) 오류</h2>
+                    <h2>사용자가 오류가 있다</h2>
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="middleBigTitle">
+                    <h1>5XX</h1>
+                    <h2>서버 오류</h2>
+                    <h2>서버가 명확하게 수행하지 못 했음.</h2>
+                </div>
+            </div>
+            <div class="section section3" id="thirdPage">
+                <div class="middleBigTitle">
+                    <h1>3. node.js</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>node JS란?</h1>
+                    <h2>JS기반의 서버사이드 플랫폼!</h2>
+                </div>
+            </div>
+            <div class="section sectoin3">
+                <div class="middleBigTitle">
+                    <h1>ㅎㅎ 저번시간에 했쥬?</h1>
+                </div>
+            </div>
+            <div class="section section4" id="fourthPage">
+                <div class="middleBigTitle">
+                    <h1>4. npm</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>npm?</h1>
+                    <h2>Node Package Manager</h2>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>npm init</h1>
+                    <h2>기본 설정</h2>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>npm install --save</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>npm uninstall</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>package.json</h1>
+                </div>
+            </div>
+            <div class="section section5" id="fifthPage">
+                <div class="middleBigTitle">
+                    <h1>5. express.js</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>express.js?</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>서버를 쉽게 짜게 해주는 프레임워크!</h1>
+                    <h2>프레임워크는 BootStrap할 때 했었죠?? ㅎㅎ</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>실습!!</h1>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>npm init</h1>
+                    <h2>파일 기본 설정!</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>npm install --save express</h1>
+                    <h2>express.js 설치</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>app.js</h1>
+                    <h2>파일을 새로 만들자</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <code><h1>const express = require('express')</h1></code>
+                    <h2>express라는 변수에 express.js 모듈을 불러와서 담는다</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <code><h1>const app = express()</h1></code>
+                    <h2>app이라는 변수에 express의 본체를 담는다</h2>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <code><h2><pre>app.get('/', function (request, response) {
+    response.send('Hello World!')
+})<pre></h2></code>
+                </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <code><h2><pre>app.listen(3000)<pre></h2></code>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <code><h2><pre>const express = require('express')
+const app = express()
+
+app.get('/', function(request, response) {
+	response.send('Hello World!')
+})
+
+app.listen(3000)</pre></h2></code>
+                </div>
+            </div>
+            <div class="section section6" id="sixthPage">
+                <div class="middleBigTitle">
+                    <h1>6. 서버를 만들어보자</h1>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>html을 보여주게 하기</h1>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>html 새로 만들자!</h1>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><pre>main&#46;html</pre></h1>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <code><h2><pre>&#60;html&#62;
+&#60;head&#62;
+    &#60;meta charset="utf-8"&#62;
+    &#60;title&#62;An Example Page&#60;&#47;title&#62;
+&#60;&#47;head&#62;
+&#60;body&#62;
+    &#60;p&#62;Hello World&#60;&#47;p&#62;
+&#60;&#47;body&#62;
+&#60;&#47;html&#62;</pre></h2></code>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <code><h2><pre>app.get('/', function (request, response) {
+    <span class="primaryText">response.send('Hello World!')</span>
+})<pre></h2></code>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <code><h2><pre>app.get('/', function (request, response) {
+    <span class="primaryText">response.sendFile(__dirname + '/main&#46;html')</span>
+})<pre></h2></code>
+                </div>
+            </div>
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <code><h2><pre>const express = require('express')
+const app = express()
+
+app.get('/', function(request, response) {
+    <span class="primaryText">response.sendFile(__dirname + '/main&#46;html')</span>
+})
+
+app.listen(3000)</pre></h2></code>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h2>끝!</h2>
+                    <h1>감사합니다!</h1>
+                    <h2>박평진, 안다해</h2>
+                    <h3>설리번 프로젝트</h3>
+                </div>
+            </div>
+
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.</h1>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.2</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
