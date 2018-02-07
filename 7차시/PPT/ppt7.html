@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>안녕, HTML?</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage();
+            });
+        </script>
+        <script type='text/javascript'>
+            WebFontConfig = {
+                custom: {
+                    families: ['Nanum Square'],
+                    urls: ['https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css']
+                }
+            };
+            (() => {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./jquery.fullPage.css"/>
+        <link rel="stylesheet" type="text/css" href="./ppt7.css"/>
+    </head>
+    <body>
+        <div id="fullpage">
+            <!-- <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>설리번과 함께라면 나도 웹잘알!</h1>
+                    <h2>6차시 HTTP 통신!!</h2>
+                </div>
+            </div>
+            <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>목차</h1>
+                    <h2><a href="#firstPage">1. 백엔드 심화
+                    </a></h2>
+                    <h2><a href="#secondPage">1-1. 템플릿 엔진</a></h2>
+                    <h2><a href="#thirdPage">1-2. Query</a></h2>
+                    <h2><a href="#fourthPage">1-3. DataBase</a></h2>
+                    <h2><a href="#fifthPage">1-4. 아이콘</a></h2>
+                    <h2><a href="#sixthPage">2. 코드의 개선</a></h2>
+                    <h2><a href="#seventhPage">2-1. CSS Preprocessor</a></h2>
+                </div>
+            </div>
+            <div class="section section1" id="firstPage">
+                <div class="middleBigTitle">
+                    <h1>1. 백엔드 심화</h1>
+                </div>
+            </div>
+            <div class="section section2" id="secondPage">
+                <div class="middleBigTitle">
+                    <h1>1-1. 템플릿 엔진</h1>
+                </div>
+            </div>
+            <div class="section section2"> //잘 되나 테스트 부탁.
+                <div class="middleBigTitle">
+                    <h1>템플릿 시스템과 템플릿 엔진</h1>
+                    <div class="imgContainer">
+                      <img src="https://nesoy.github.io/assets/posts/20170306/1.PNG" />
+                    </div>
+                </div>
+            </div>
+            <div class="section section2" id="secondPage">
+                <div class="middleBigTitle">
+                    <h1>템플릿 엔진의 종류</h1>
+                    <h2>pug(jade), ejs 등등 어마무지하게 많음!!</h2>
+                    <h2>오늘 우리는 html 템플릿 엔진인 pug에 대해 알아보겠다.</h2>
+                </div>
+            </div>
+            <div class="section section2" id="secondPage">
+                <div class="middleBigTitle">
+                    <h1>pug 설치</h1>
+                    <h2><code>npm install pug</code></h2>
+                </div>
+            </div> -->
+            <!-- <div class="section section3" id="thirdPage">
+                <div class="middleBigTitle">
+                    <h1>1-2. Query</h1>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>https&#58;&#47;&#47;www&#46;youtube&#46;com&#47;results&#63;search_query=설리번</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2><span class="primaryText">https&#58;&#47;&#47;www&#46;youtube&#46;com&#47;results</span>&#63;search_query=설리번</h2>
+                    <h2><span class="primaryText">주소!</span></h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>https&#58;&#47;&#47;www&#46;youtube&#46;com&#47;results<span class="primaryText">&#63;search_query=설리번</span></h2>
+                    <h2><span class="primaryText">뭐지? 주소인가?</span></h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h2>&#63;search_query=설리번</h2>
+                    <h2>쿼리!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>쿼리?</h1>
+                    <h2>웹페이지에게 주는 요청!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1><span class="primaryText">&#63;</span>search_query=설리번</h1>
+                    <h2>쿼리는 이 물음표에서 시작된다!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>&#63;<span class="primaryText">search_query=설리번</span></h1>
+                    <h2>이 부분에서 알겠지만 쿼리는 매개변수 형식으로 전달된다!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>&#63;<span class="primaryText">search_query</span>=설리번</h1>
+                    <h2>변수 이름!</h2>
+                </div>
+            </div> -->
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>&#63;search_query=<span class="primaryText">설리번</span></h1>
+                    <h2>변수의 값!</h2>
+                </div>
+            </div>
+            <div class="section section3">
+                <div class="middleBigTitle">
+                    <h1>&#63;<span class="primaryText">search_query</span>=<span class="primaryText">설리번</span></h1>
+                    <h2><span class="primaryText">search_query</span>는 <span class="primaryText">설리번</span>입니다!</h2>
+                </div>
+            </div>
+            <div class="section section4" id="fourthPage">
+                <div class="middleBigTitle">
+                    <h1>1-3 DataBase</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>database란?</h1>
+                    <div class="imgContainer">
+                      <img src="http://www.grahamwideman.com/gw/Models/webdb/WebDB_Generic.GIF" />
+                    </div>
+                </div>
+            </div>
+            <div class="section section4">
+              <div class="middleBigTitle">
+                <h1>관계형 db와 비관계형 db?</h1>
+                <h2>mysql vs mongodb</h2>
+              </div>
+            </div>
+            <div class="section section5" id="fifthPage">
+                <div class="middleBigTitle">
+                    <h1>1-4. 아이콘</h1>
+                </div>
+            </div>
+            <div class="section section6" id="sixthPage">
+                <div class="middleBigTitle">
+                    <h1>2. 코드의 개선</h1>
+                </div>
+            </div>
+            <div class="section section7" id="seventhPage">
+                <div class="middleBigTitle">
+                    <h1>2-1. CSS Preprocessor</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>CSS 전처리기</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>다른 파일을 CSS로 컴파일해준다!</h1>
+                    <h2>정말?</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>CSS문법의 한계</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2><code><pre><span class="primaryText">div</span> h1 {
+
+}
+<span class="primaryText">div</span> h2 {
+
+}
+<span class="primaryText">div</span> h3 {
+
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>코드가 너무 길어진다!</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2><code><pre>div.test1 {
+    color: <span class="primaryText">#2a2a2a</span>;
+    background-color: <span class="primaryText">#fafafa</span>;
+}
+
+div.test2 {
+    color: <span class="primaryText">#2a2a2a</span>;
+    background-color: <span class="primaryText">#fafafa</span>;
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>코드가 중복된다!</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>갑자기 혜성처럼 등장한 Sass!</h1>
+                    <h2>두둥</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>SASS</h1>
+                    <h2>Syntactically Awesome Style Sheets</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>SASS</h1>
+                    <h2>Syntactically Awesome Style Sheets</h2>
+                    <h2>문법적으로 어썸한 스타일시트</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>SCSS란?</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>SASS의 역할을 하면서 CSS의 문법을 포함!</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>CSS</h2>
+                    <h2><code><pre><span class="primaryText">div</span> h1 {
+
+}
+<span class="primaryText">div</span> h2 {
+
+}
+<span class="primaryText">div</span> h3 {
+
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>SCSS</h2>
+                    <h2><code><pre><span class="primaryText">div</span> {
+    h1 {
+
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>처음 css preprocessor는 파일을 css로 바꿔준다고 했었는데..??</h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>SCSS</h2>
+                    <h2><code><pre><span class="primaryText">div</span> {
+    h1 {
+
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>CSS</h2>
+                    <h2><code><pre><span class="primaryText">div</span> h1 {
+
+}
+<span class="primaryText">div</span> h2 {
+
+}
+<span class="primaryText">div</span> h3 {
+
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h1>변수도 넣을 수 있다!</h1>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>SCSS</h2>
+                    <h2><code><pre><span class="primaryText">$_color_coal : #2a2a2a</span>;
+<span class="primaryText">$_color_gray : #fafafa</span>;
+
+div.test1 {
+    color: <span class="primaryText">$_color_coal</span>;
+    background-color: <span class="primaryText">$_color_gray</span>;
+}
+
+div.test2 {
+    color: <span class="primaryText">$_color_coal</span>;
+    background-color: <span class="primaryText">$_color_gray</span>;
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section section7">
+                <div class="middleBigTitle">
+                    <h2>CSS</h2>
+                    <h2><code><pre>div.test1 {
+    color: <span class="primaryText">#2a2a2a</span>;
+    background-color: <span class="primaryText">#fafafa</span>;
+}
+
+div.test2 {
+    color: <span class="primaryText">#2a2a2a</span>;
+    background-color: <span class="primaryText">#fafafa</span>;
+}</pre></code></h2>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h2>끝!</h2>
+                    <h1>감사합니다!</h1>
+                    <h2>박평진, 안다해</h2>
+                    <h3>설리번 프로젝트</h3>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.</h1>
+                </div>
+            </div>
+            <div class="section sectionEnd">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.2</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
