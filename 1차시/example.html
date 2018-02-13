@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>아주 멋진 사이트</title>
+        <link rel="stylesheet" href="example.css">
+        <meta charset="utf-8">
+        <script>
+        WebFontConfig = {
+                custom: {
+                    families: ['Nanum Square'],
+                    urls: ['https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css']
+                }
+            };
+            (() => {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <header class="flexColDiv">
+            <h1>아주 멋진 갤러리</h1>
+            <div class="sideLine"></div>
+        </header>
+        <section>
+            <div class="flexColDiv" id="picturesContain">
+                <div class="flexRowDiv">
+                    <div class="imageContain">
+                        <p>아주 멋진 사진1</p>
+                    </div>
+                    <p>아주 멋진 사진 1의 아주 멋진 설명</p>
+                </div>
+                <div class="flexRowDiv">
+                    <div class="imageContain">
+                        <p>아주 멋진 사진2</p>
+                    </div>
+                    <p>아주 멋진 사진 2의 아주 멋진 설명</p>
+                </div>
+                <div class="flexRowDiv">
+                    <div class="imageContain">
+                        <p>아주 멋진 사진3</p>
+                    </div>
+                    <p>아주 멋진 사진 3의 아주 멋진 설명</p>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>

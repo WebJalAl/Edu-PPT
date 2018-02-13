@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>안녕, HTML?</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./jquery.fullPage.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage();
+            });
+        </script>
+        <script type='text/javascript'>
+            WebFontConfig = {
+                custom: {
+                    families: ['Nanum Square'],
+                    urls: ['https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css']
+                }
+            };
+            (() => {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./jquery.fullPage.css"/>
+        <link rel="stylesheet" type="text/css" href="./ppt1.css"/>
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section section0">
+                <div class="middleBigTitle">
+                    <h1>설리번과 함께라면 나도 웹잘알!</h1>
+                    <h2>안녕, HTML?</h2>
+                </div>
+            </div>
+            <div class="section section1">
+                <div class="middleBigTitle">
+                    <h1><span class="bigTitle">목차</span></h1>
+                    <h2 id="tableOfContent">
+                        <a href="#iceBreakingDiv">1. 아이스 브레이킹!</a><br>
+                        <a href="#friendlyWebDiv">2. 웹이랑 친해지기!</a><br>
+                        <a href="#helloHTMLDiv">3. 안녕, HTML?</a><br>
+                        <a href="#breakWebDiv">4. 웹을 뜯어보자!</a><br>
+                        <a href="#madeMineWebDiv">5. 나만의 웹사이트 만들기!</a><br>
+                        <a href="#endPPTDiv">ㅎ</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="section section2" id="iceBreakingDiv">
+                <div class="middleBigTitle">
+                    <h1>ICE BREAKING!</h1>
+                    <i class="fas fa-snowflake icon"></i>
+                </div>
+            </div>
+            <div class="section section4" id="friendlyWebDiv">
+                <div class="middleBigTitle">
+                    <h1>신기한 웹들</h1>
+                </div>
+            </div>
+            <div class="section section4">
+                  <div class="middleBigTitle">
+                      <h1>Chrome Experiments</h1>
+                      <div class="imgContainer">
+                          <img src="https://raw.githubusercontent.com/spite/polygon-shredder/master/snapshot.jpg" alt="">
+                      </div>
+                      <a href="https://www.clicktorelease.com/code/polygon-shredder/" target="_blank"><i class="fas fa-link"></i></a>
+                  </div>
+              </div>
+            <div class="section section4">
+                <div class="middleBigTitle">
+                    <h1>지렁이 게임</h1>
+                    <div class="imgContainer">
+                        <img src="http://cfile4.uf.tistory.com/image/260F3647571C0A9F295713" alt="">
+                    </div>
+                    <a href="https://slither.io" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+
+            </div>
+              <div class="section section5">
+                  <div class="middleBigTitle">
+                      <h1>웹의 역사</h1>
+                  </div>
+            </div>
+            <div class="section section5">
+                <div class="middleBigTitle">
+                    <h1>팀 버너스리</h1>
+                    <div class="imgContainer">
+                        <img src="http://image.itdonga.com/files/2015/02/11/002_DsuDwa3.jpeg" alt="">
+                    </div>
+                    <h2>웹을 만드신 분</h2>
+                    <a href="https://youtu.be/eGQehDQ8HBU" target="_blank"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="section section6" id="helloHTMLDiv">
+                <div class="middleBigTitle">
+                    <h1>안녕, HTML</h1>
+                    <h2>html 배워보기</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>HTML이란?</h1>
+                    <p class="littleText">Hyper Text Markup Language</p>
+                    <div class="blankDiv"></div>
+                    <h2>웹 페이지를 작성하기 위한 언어</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>그럼 웹페이지는?</h1>
+                    <h2>HTML을 해석해서 화면에 글씨와 그림을 보여주는 것!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>HTML의 구조!</h1>
+                    <h2>html!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h2><code>&lt;!DOCTYPE html&gt;<br><br>&lt;html&gt;<br><br>&emsp;&emsp;&lt;head&gt;<br><br>&emsp;&emsp;&lt;/head&gt;<br><br>&emsp;&emsp;&lt;body&gt;<br><br>&emsp;&emsp;&lt;/body&gt;<br><br>&lt;/html&gt;</code></h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>태그</h1>
+                    <h2>HTML문서의 구성요소!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h2>여는 태그<code>&lt;&gt;</code></h2>
+                    <h2>닫는 태그<code>&lt;/&gt;</code></h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>태그의 활용!</h1>
+                    <h2>태그는 <code>&lt;꺽쇠 안에 무엇을 넣느냐에 따라&gt;</code> 내용이 달라진다!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><code>&lt;p&gt;</code></h1>
+                    <h2>p태그란? 문단, PARAGRAPH의 줄임말로 문단을 나타낼 때 사용하는 태그!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1>사용법</h1>
+                    <h2 class="marginText underLineText">코드<br></h2>
+                    <h2><code>&lt;p&gt;설리번 짱짱~&lt;/p&gt;</code></h2>
+                    <!-- <div class="sideLineDiv"></div> -->
+                    <i class="fas fa-arrow-circle-down nextIcon"></i>
+                    <h2 class="marginText underLineText">결과<br></h2>
+                    <h2>설리번 짱짱~</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><code>&lt;h1&gt; - &lt;h6&gt;</code></h1>
+                    <h2>h1~h6태그란? HEADLINE의 줄임말!<br>제목을 6단계의 글자 크기로 나타내주는 태그!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><code>&lt;b&gt; &lt;strong&gt;</code></h1>
+                    <h2>글씨를 굵게 해주는 태그들!</h2>
+                    <br>
+                    <h3>최신 표준에서는 b태그보다 strong 태그를 권장함</h3>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><code>&lt;button&gt;</code></h1>
+                    <h2>누를 수 있는 버튼을 만드는 태그!</h2>
+                </div>
+            </div>
+
+            <div class="section section6">
+                <div class="middleBigTitle">
+                    <h1><code>&lt;title&gt;</code></h1>
+                    <h2>페이지의 이름을 정할 수 있는 태그!</h2>
+                </div>
+            </div>
+
+            <div class="section section7" id="breakWebDiv">
+              <div class="middleBigTitle">
+                  <h1>웹을 뜯어보자!</h1>
+              </div>
+            </div>
+
+            <div class="section section7">
+              <div class="middleBigTitle">
+                  <h1>먼저 네이버!</h1>
+                  <a href="https://www.naver.com" target="_blank"><img src="https://lh3.googleusercontent.com/DjUgn0hqwzO0hw4NchiE4r66I5vutBFZQWsL0nct8gFTkzRhBIAZmyXPdtyzD4-hKGM=w300" alt=""></a>
+              </div>
+            </div>
+
+            <div class="section section7">
+              <div class="middleBigTitle">
+                  <h1>다음!</h1>
+                  <a href="https://www.daum.net" target="_blank"><img src="http://is1.mzstatic.com/image/thumb/Purple128/v4/4f/1a/00/4f1a008f-2638-b9f2-b4ab-49a8c83ee9f7/source/1200x630bb.jpg" alt=""></a>
+              </div>
+            </div>
+
+            <div class="section section8" id="madeMineWebDiv">
+                <div class="middleBigTitle">
+                    <h1>나만의 웹사이트 만들기!</h1>
+                </div>
+            </div>
+
+            <div class="section section8">
+                <div class="middleBigTitle">
+                    <h1>나만의 사이트!</h1>
+                    <h2>자신의 사이트에 들어갈 내용을 구상해보아요!</h2>
+                </div>
+            </div>
+            <div class="section section9" id="endPPTDiv">
+                <div class="middleBigTitle">
+                    <h1>감사합니다!</h1>
+                    <h1>박평진, 안다해 선생님</h1>
+                    <h3>설리번과 함께라면 나도 웹잘알!</h3>
+                </div>
+            </div>
+
+            <div class="section section9">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.</h1>
+                </div>
+            </div>
+
+            <div class="section section9">
+                <div class="middleBigTitle">
+                    <h1>더이상 페이지가 존재하지 않습니다.2</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

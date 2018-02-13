@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.section {
+  height: 100vh; }
+
+.section0 {
+  background-color: #bbdefb; }
+
+.section1 {
+  background-color: #90caf9; }
+
+.section2 {
+  background-color: #64b5f6; }
+
+.section3 {
+  background-color: #42a5f5; }
+
+.section4 {
+  background-color: #2196f3; }
+
+.section5 {
+  background-color: #1e88e5; }
+
+.section6 {
+  background-color: #1976d2; }
+
+.section7 {
+  background-color: #1565c0; }
+
+.section8 {
+  background-color: #0d47a1; }
+
+.section9 {
+  background-color: #1565c0; }
+
+.section10 {
+  background-color: #1976d2; }
+
+.section11 {
+  background-color: #1e88e5; }
+
+.section12 {
+  background-color: #2196f3; }
+
+.section13 {
+  background-color: #42a5f5; }
+
+.section14 {
+  background-color: #64b5f6; }
+
+.section15 {
+  background-color: #90caf9; }
+
+.section16 {
+  background-color: #bbdefb; }
+
+.section17 {
+  background-color: #90caf9; }
+
+.section18 {
+  background-color: #64b5f6; }
+
+.section19 {
+  background-color: #42a5f5; }
+
+.section20 {
+  background-color: #2196f3; }
+
+.section21 {
+  background-color: #1e88e5; }
+
+.section22 {
+  background-color: #1976d2; }
+
+#sullivanLogoImg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  width: 100px; }
+
+div.imgContainer {
+  display: flex;
+  width: 40rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem; }
+
+div.middleBigTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-family: 'Nanum Square', sans-serif;
+  color: white;
+  text-align: center; }
+  div.middleBigTitle a {
+    text-decoration: none;
+    color: white; }
+  div.middleBigTitle h1 {
+    font-size: 6.5rem;
+    margin: 0.5rem; }
+  div.middleBigTitle h2 {
+    font-size: 3.5rem;
+    margin: 0.5rem; }
+  div.middleBigTitle h3 {
+    font-size: 2rem;
+    margin-left: 0.5rem; }
+  div.middleBigTitle .marginText {
+    margin: 2rem 0; }
+  div.middleBigTitle .underLineText::after {
+    content: '';
+    width: 4.5rem;
+    border-bottom: 4px solid white;
+    display: block;
+    margin-top: 0.2rem; }
+  div.middleBigTitle p.littleText {
+    font-size: 2rem; }
+  div.middleBigTitle div.blankDiv {
+    height: 4rem; }
+  div.middleBigTitle div.sideLineDiv {
+    width: 80rem;
+    height: 1rem;
+    margin: 3rem 0;
+    background-color: white; }
+  div.middleBigTitle span.bigTitle {
+    font-size: 6rem;
+    margin: 2rem; }
+  div.middleBigTitle h2#tableOfContent {
+    line-height: 5rem; }
+  div.middleBigTitle code {
+    display: flex;
+    text-align: left;
+    font-family: inherit; }
+  div.middleBigTitle .icon {
+    font-size: 20rem; }
+  div.middleBigTitle .nextIcon {
+    margin: 3rem; }
